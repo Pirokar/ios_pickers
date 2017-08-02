@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559C0CD61F320D5B00172857 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 559C0CD51F320D5B00172857 /* statedictionary.plist */; };
 		55C8390F1F31C9C70071F9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8390E1F31C9C70071F9B9 /* AppDelegate.swift */; };
 		55C839111F31C9C70071F9B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C839101F31C9C70071F9B9 /* ViewController.swift */; };
 		55C839141F31C9C70071F9B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C839121F31C9C70071F9B9 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		559C0CD51F320D5B00172857 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../beg-iphone-dev-w-swift-master/Examples/07 - Picker Data/statedictionary.plist"; sourceTree = "<group>"; };
 		55C8390B1F31C9C70071F9B9 /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C8390E1F31C9C70071F9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C839101F31C9C70071F9B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				55C839321F31CB420071F9B9 /* DoubleComponentPickerViewController.swift */,
 				55C839341F31CB610071F9B9 /* DependentComponentPickerViewController.swift */,
 				55C839361F31CB710071F9B9 /* CutomPickerViewController.swift */,
+				559C0CD51F320D5B00172857 /* statedictionary.plist */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				55C839191F31C9C70071F9B9 /* LaunchScreen.storyboard in Resources */,
 				55C839161F31C9C70071F9B9 /* Assets.xcassets in Resources */,
+				559C0CD61F320D5B00172857 /* statedictionary.plist in Resources */,
 				55C839141F31C9C70071F9B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +430,7 @@
 				55C8392A1F31C9C70071F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55C8392B1F31C9C70071F9B9 /* Build configuration list for PBXNativeTarget "PickersUITests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +439,7 @@
 				55C8392D1F31C9C70071F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

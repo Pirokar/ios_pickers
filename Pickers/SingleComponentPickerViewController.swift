@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SingleComponentPickerViewController: UIViewController {
+class SingleComponentPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var singlePicker: UIPickerView!
+    private let characterNames = ["Владимир", "Елена", "Лариса", "Валерий", "Игорь", "Ольга", "Артур"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +24,28 @@ class SingleComponentPickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(_ sender: Any) {
+        let row = singlePicker.selectedRow(inComponent: 0)
+        let selected = characterNames[row]
+        let title = "Вы выбрали \(selected)!"
+        
+        let alert = UIAlertController(title: title, message: "Спасибо за выбор!", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Спасибо за выбор", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
-    */
+    
+    // MARK: Picker data source methods
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return characterNames.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return characterNames[row]
+    }
 
 }
