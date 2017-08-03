@@ -19,6 +19,8 @@
 		55C839331F31CB420071F9B9 /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C839321F31CB420071F9B9 /* DoubleComponentPickerViewController.swift */; };
 		55C839351F31CB610071F9B9 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C839341F31CB610071F9B9 /* DependentComponentPickerViewController.swift */; };
 		55C839371F31CB710071F9B9 /* CutomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C839361F31CB710071F9B9 /* CutomPickerViewController.swift */; };
+		E70AE6BE1F331E0D0040849E /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = E70AE6BD1F331E0D0040849E /* win.wav */; };
+		E70AE6C01F331E1A0040849E /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = E70AE6BF1F331E1A0040849E /* crunch.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		55C839321F31CB420071F9B9 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		55C839341F31CB610071F9B9 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		55C839361F31CB710071F9B9 /* CutomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutomPickerViewController.swift; sourceTree = "<group>"; };
+		E70AE6BD1F331E0D0040849E /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		E70AE6BF1F331E1A0040849E /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				55C839341F31CB610071F9B9 /* DependentComponentPickerViewController.swift */,
 				55C839361F31CB710071F9B9 /* CutomPickerViewController.swift */,
 				559C0CD51F320D5B00172857 /* statedictionary.plist */,
+				E70AE6BF1F331E1A0040849E /* crunch.wav */,
+				E70AE6BD1F331E0D0040849E /* win.wav */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -198,8 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C839191F31C9C70071F9B9 /* LaunchScreen.storyboard in Resources */,
+				E70AE6C01F331E1A0040849E /* crunch.wav in Resources */,
 				55C839161F31C9C70071F9B9 /* Assets.xcassets in Resources */,
 				559C0CD61F320D5B00172857 /* statedictionary.plist in Resources */,
+				E70AE6BE1F331E0D0040849E /* win.wav in Resources */,
 				55C839141F31C9C70071F9B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

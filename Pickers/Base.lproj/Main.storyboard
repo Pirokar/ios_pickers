@@ -65,13 +65,48 @@
                     <view key="view" contentMode="scaleToFill" id="fC0-Xi-Zac">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEY-35-fU9">
+                                <rect key="frame" x="27" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2dk-iy-uun" id="nzT-Ko-cZs"/>
+                                    <outlet property="delegate" destination="2dk-iy-uun" id="iFc-DH-YVg"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-0z-HKp">
+                                <rect key="frame" x="181.5" y="235" width="12" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.3284345004" blue="0.332864141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-ed-MtG">
+                                <rect key="frame" x="154.5" y="323.5" width="66" height="30"/>
+                                <state key="normal" title=" Крутить!"/>
+                                <connections>
+                                    <action selector="spin:" destination="2dk-iy-uun" eventType="touchUpInside" id="b1V-dN-6Nc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SLf-ed-MtG" firstAttribute="top" secondItem="jH2-0z-HKp" secondAttribute="bottom" constant="31" id="4VL-oe-K10"/>
+                            <constraint firstItem="SLf-ed-MtG" firstAttribute="centerX" secondItem="fC0-Xi-Zac" secondAttribute="centerX" id="7Ct-Nq-Jzm"/>
+                            <constraint firstItem="tEY-35-fU9" firstAttribute="centerX" secondItem="fC0-Xi-Zac" secondAttribute="centerX" id="Exx-7U-SAC"/>
+                            <constraint firstItem="jH2-0z-HKp" firstAttribute="centerX" secondItem="fC0-Xi-Zac" secondAttribute="centerX" id="KIx-vY-TjD"/>
+                            <constraint firstItem="tEY-35-fU9" firstAttribute="top" secondItem="fC0-Xi-Zac" secondAttribute="topMargin" id="XoS-tl-KY0"/>
+                            <constraint firstItem="jH2-0z-HKp" firstAttribute="top" secondItem="tEY-35-fU9" secondAttribute="bottom" constant="19" id="dbx-PP-RYK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="mDi-KF-IzK"/>
+                    <connections>
+                        <outlet property="button" destination="SLf-ed-MtG" id="RpZ-qY-EP3"/>
+                        <outlet property="picker" destination="tEY-35-fU9" id="9gr-3c-G8s"/>
+                        <outlet property="winLabel" destination="jH2-0z-HKp" id="Byq-oc-XpA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0O-X3-IME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1764" y="800"/>
+            <point key="canvasLocation" x="-1764" y="799.2503748125938"/>
         </scene>
         <!--Dependent-->
         <scene sceneID="xjF-b6-o9r">
